@@ -1,0 +1,7 @@
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process
+d:
+cd D:\Sign2Text\Sign2TextBackEnd\env\Scripts
+./Activate.ps1
+cd ..
+cd ..
+uvicorn main:app --host localhost

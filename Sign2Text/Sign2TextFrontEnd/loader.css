@@ -1,0 +1,24 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: fit-content;
+    font-size: 20px;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 2s steps(4) infinite;
+  }
+  .loader:before {
+    content:"Predicting..."
+  }
+  @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
+
+
+  .loader-initial {
+    width: fit-content;
+    clip-path: inset(0 3ch 0 0);
+    animation: l4 2s steps(4) infinite;
+    font-size: 50px;
+    color: rgb(0, 157, 255);
+  }
+  .loader-initial:before {
+    content:"Loading..."
+  }
+  @keyframes l4 {to{clip-path: inset(0 -1ch 0 0)}}
